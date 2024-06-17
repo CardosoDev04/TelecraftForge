@@ -19,12 +19,15 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_TIN = ModCreativeTabs.addToTab(ITEMS.register("raw_tin", () ->
             new Item(new Item.Properties())));
 
+    public static final RegistryObject<Item> TIN_INGOT = ModCreativeTabs.addToTab(ITEMS.register("tin_ingot", () ->
+            new Item(new Item.Properties())));
+
     public static final RegistryObject<BlockItem> EXAMPLE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_block", () ->
             new BlockItem(ModBlocks.EXAMPLE_BLOCK.get(),new Item.Properties()
                     .rarity(Rarity.UNCOMMON)
             )));
 
-    public static final RegistryObject<BlockItem> TIN_ORE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_ore", () ->
+    public static final RegistryObject<BlockItem> TIN_ORE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("tin_ore", () ->
             new BlockItem(ModBlocks.TIN_ORE.get(), new Item.Properties())
             ));
 }

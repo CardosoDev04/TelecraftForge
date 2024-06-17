@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "telecraft:raw_tin"
+  },
+  "result": "telecraft:tin_ingot",
+  "experience": 0.5
+}
