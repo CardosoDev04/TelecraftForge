@@ -1,6 +1,6 @@
 {
-  "type" : "forge:add_features",
-  "features" : "telecraft:overworld_example_ore",
-  "biomes" : "#minecraft:is_overworld",
-  "step" : "underground_ores"
+  "type": "forge:add_features",
+  "features": "telecraft:overworld_example_ore",
+  "biomes": "#minecraft:is_overworld",
+  "step": "underground_ores"
 }

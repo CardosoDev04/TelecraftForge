@@ -7,8 +7,13 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:taiga": "2024-06-17 11:56:40 +0100",
+      "minecraft:river": "2024-06-17 11:41:49 +0100",
       "minecraft:stony_shore": "2024-06-16 16:39:43 +0100",
-      "minecraft:old_growth_birch_forest": "2024-06-16 16:39:58 +0100"
+      "minecraft:dripstone_caves": "2024-06-17 11:41:36 +0100",
+      "minecraft:desert": "2024-06-17 11:41:23 +0100",
+      "minecraft:old_growth_birch_forest": "2024-06-16 16:39:58 +0100",
+      "minecraft:plains": "2024-06-17 11:55:13 +0100"
     },
     "done": false
   },
