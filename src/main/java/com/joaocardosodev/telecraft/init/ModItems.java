@@ -17,17 +17,14 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     public static final RegistryObject<Item> EXAMPLE_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_item", () ->
-            new Item(new Item.Properties().stacksTo(16)
-                    .food(new FoodProperties.Builder()
-                            .nutrition(5)
-                            .saturationMod(0.2f)
-                            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED),0.5f)
-                            .build())
-                    .rarity(Rarity.EPIC)
-            )));
+            new Item(new Item.Properties())));
 
     public static final RegistryObject<BlockItem> EXAMPLE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_block", () ->
             new BlockItem(ModBlocks.EXAMPLE_BLOCK.get(),new Item.Properties()
                     .rarity(Rarity.UNCOMMON)
             )));
+
+    public static final RegistryObject<BlockItem> EXAMPLE_ORE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_ore", () ->
+            new BlockItem(ModBlocks.EXAMPLE_ORE.get(), new Item.Properties())
+            ));
 }

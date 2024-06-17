@@ -1,5 +1,6 @@
 {
-  "item.telecraft.example_item" : "Example Item (Taco)"
+  "item.telecraft.example_item" : "Example Item"
   "block.telecraft.example_block" : "Example Block",
-  "itemGroup.telecraft_tab": "Telecraft"
+  "itemGroup.telecraft_tab": "Telecraft",
+  "block.telecraft.example_ore": "Example Ore"
 }

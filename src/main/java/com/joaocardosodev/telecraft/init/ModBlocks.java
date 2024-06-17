@@ -1,8 +1,10 @@
 package com.joaocardosodev.telecraft.init;
 
 import com.joaocardosodev.telecraft.block.TestBlock;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -26,6 +28,12 @@ public class ModBlocks {
                     .lightLevel(state -> 10)
                     .requiresCorrectToolForDrops()
                     .noOcclusion()
-                    .isViewBlocking((state,world,pos) -> false)
+                    .isViewBlocking((state, world, pos) -> false)
+    ));
+
+    public static final RegistryObject<DropExperienceBlock> EXAMPLE_ORE = BLOCKS.register("example_ore", () -> new DropExperienceBlock(
+            BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)
+                    .mapColor(MapColor.COLOR_GRAY),
+                    UniformInt.of(1, 3)
     ));
 }
