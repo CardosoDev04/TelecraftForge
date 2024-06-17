@@ -1,8 +1,5 @@
 package com.joaocardosodev.telecraft.init;
 
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -22,8 +19,8 @@ public class ModItems {
     public static final RegistryObject<Item> TIN_INGOT = ModCreativeTabs.addToTab(ITEMS.register("tin_ingot", () ->
             new Item(new Item.Properties())));
 
-    public static final RegistryObject<BlockItem> EXAMPLE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("leyden_jar", () ->
-            new BlockItem(ModBlocks.EXAMPLE_BLOCK.get(),new Item.Properties()
+    public static final RegistryObject<BlockItem> LEYDEN_JAR_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("leyden_jar", () ->
+            new BlockItem(ModBlocks.LEYDEN_JAR.get(),new Item.Properties()
                     .rarity(Rarity.UNCOMMON)
             )));
 

@@ -30,6 +30,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
+import static com.joaocardosodev.telecraft.init.ModBlockEntities.BLOCK_ENTITIES;
 import static com.joaocardosodev.telecraft.init.ModBlocks.BLOCKS;
 import static com.joaocardosodev.telecraft.init.ModItems.ITEMS;
 import static com.joaocardosodev.telecraft.init.ModTabs.CREATIVE_MODE_TABS;
@@ -58,6 +59,10 @@ public class Telecraft
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+
+        BLOCK_ENTITIES.register(modEventBus);
+
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

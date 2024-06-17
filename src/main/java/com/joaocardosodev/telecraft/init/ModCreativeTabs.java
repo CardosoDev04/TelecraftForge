@@ -1,13 +1,10 @@
 package com.joaocardosodev.telecraft.init;
 
-import com.joaocardosodev.telecraft.Telecraft;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.ArrayList;
@@ -25,7 +22,7 @@ public class ModCreativeTabs {
     public static final RegistryObject<CreativeModeTab> TELECRAFT_TAB = CREATIVE_MODE_TABS.register("telecraft_tab", () ->
             CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.telecraft_tab"))
-                    .icon(ModItems.EXAMPLE_BLOCK_ITEM.get()::getDefaultInstance)
+                    .icon(ModItems.LEYDEN_JAR_BLOCK_ITEM.get()::getDefaultInstance)
                     .displayItems((displayParams,output) -> {
                         TELECRAFT_TAB_ITEMS.forEach(itemLike -> output.accept(itemLike.get()));
                     })

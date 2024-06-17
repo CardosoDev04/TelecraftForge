@@ -18,7 +18,7 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("leyden_jar", () -> new LeydenJar(
+    public static final RegistryObject<Block> LEYDEN_JAR = BLOCKS.register("leyden_jar", () -> new LeydenJar(
             (BlockBehaviour.Properties.copy(Blocks.GLASS))
                     .mapColor(MapColor.COLOR_GREEN)
                     .strength(2f)
