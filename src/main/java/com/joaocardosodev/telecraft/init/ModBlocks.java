@@ -31,7 +31,7 @@ public class ModBlocks {
                     .isViewBlocking((state, world, pos) -> false)
     ));
 
-    public static final RegistryObject<DropExperienceBlock> EXAMPLE_ORE = BLOCKS.register("example_ore", () -> new DropExperienceBlock(
+    public static final RegistryObject<DropExperienceBlock> TIN_ORE = BLOCKS.register("tin_ore", () -> new DropExperienceBlock(
             BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)
                     .mapColor(MapColor.COLOR_GRAY),
                     UniformInt.of(1, 3)

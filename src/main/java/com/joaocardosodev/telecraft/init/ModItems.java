@@ -16,7 +16,7 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
-    public static final RegistryObject<Item> EXAMPLE_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_item", () ->
+    public static final RegistryObject<Item> RAW_TIN = ModCreativeTabs.addToTab(ITEMS.register("raw_tin", () ->
             new Item(new Item.Properties())));
 
     public static final RegistryObject<BlockItem> EXAMPLE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_block", () ->
@@ -24,7 +24,7 @@ public class ModItems {
                     .rarity(Rarity.UNCOMMON)
             )));
 
-    public static final RegistryObject<BlockItem> EXAMPLE_ORE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_ore", () ->
-            new BlockItem(ModBlocks.EXAMPLE_ORE.get(), new Item.Properties())
+    public static final RegistryObject<BlockItem> TIN_ORE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_ore", () ->
+            new BlockItem(ModBlocks.TIN_ORE.get(), new Item.Properties())
             ));
 }

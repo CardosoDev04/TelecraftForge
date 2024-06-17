@@ -1,6 +1,6 @@
 {
   "block.telecraft.example_block": "Bloco de Exemplo",
   "itemGroup.telecraft_tab": "Telecraft",
-  "item.telecraft.example_item" : "Item de Exemplo",
-  "block.telecraft.example_ore": "Minério de Exemplo"
+  "item.telecraft.example_item" : "Estanho Cru",
+  "block.telecraft.example_ore": "Minério de Estanho"
 }

@@ -2,6 +2,6 @@
   "replace" : false,
   "values" : [
     "telecraft:example_block",
-    "telecraft:example_ore"
+    "telecraft:tin_ore"
   ]
 }

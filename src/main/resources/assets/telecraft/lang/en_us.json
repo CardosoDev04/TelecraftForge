@@ -1,6 +1,6 @@
 {
-  "item.telecraft.example_item" : "Example Item"
+  "item.telecraft.example_item" : "Raw Tin"
   "block.telecraft.example_block" : "Example Block",
   "itemGroup.telecraft_tab": "Telecraft",
-  "block.telecraft.example_ore": "Example Ore"
+  "block.telecraft.example_ore": "Tin Ore"
 }
