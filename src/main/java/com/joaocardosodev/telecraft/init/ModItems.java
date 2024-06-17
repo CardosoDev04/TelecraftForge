@@ -22,7 +22,7 @@ public class ModItems {
     public static final RegistryObject<Item> TIN_INGOT = ModCreativeTabs.addToTab(ITEMS.register("tin_ingot", () ->
             new Item(new Item.Properties())));
 
-    public static final RegistryObject<BlockItem> EXAMPLE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("example_block", () ->
+    public static final RegistryObject<BlockItem> EXAMPLE_BLOCK_ITEM = ModCreativeTabs.addToTab(ITEMS.register("leyden_jar", () ->
             new BlockItem(ModBlocks.EXAMPLE_BLOCK.get(),new Item.Properties()
                     .rarity(Rarity.UNCOMMON)
             )));

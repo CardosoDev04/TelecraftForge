@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values" : [
-    "telecraft:example_block",
+    "telecraft:leyden_jar",
     "telecraft:tin_ore"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "item.telecraft.raw_tin" : "Raw Tin"
-  "block.telecraft.example_block" : "Example Block",
+  "block.telecraft.leyden_jar" : "Leyden Jar",
   "itemGroup.telecraft_tab": "Telecraft",
   "block.telecraft.tin_ore": "Tin Ore",
   "block.telecraft.tin_ingot": "Tin Ingot"

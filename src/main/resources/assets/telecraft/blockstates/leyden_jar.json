@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "" : {
+      "model" : "telecraft:block/leyden_jar"
+    }
+  }
+}
