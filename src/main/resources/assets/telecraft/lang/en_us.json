@@ -1,0 +1,5 @@
+{
+  "item.telecraft.example_item" : "Example Item (Taco)"
+  "block.telecraft.example_block" : "Example Block",
+  "itemGroup.telecraft_tab": "Telecraft"
+}
