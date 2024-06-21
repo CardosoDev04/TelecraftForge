@@ -1,10 +1,10 @@
 package com.joaocardosodev.telecraft.block;
 
+import com.joaocardosodev.client.screen.ClientHooks;
 import com.joaocardosodev.telecraft.blockentity.LeydenJarBlockEntity;
 import com.joaocardosodev.telecraft.init.ModBlockEntities;
 import com.joaocardosodev.telecraft.util.TickableBlockEntity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -14,7 +14,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
@@ -24,6 +23,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
@@ -59,10 +60,15 @@ public class LeydenJar extends HorizontalDirectionalBlock implements EntityBlock
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
         if(!level.isClientSide) {
+
             BlockEntity be = level.getBlockEntity(pos);
 
             if(be instanceof LeydenJarBlockEntity blockEntity) {
-                ItemStackHandler block_inventory = blockEntity.getInventory();
+
+
+                DistExecutor.unsafeCallWhenOn(Dist.CLIENT, () -> () -> ClientHooks.openLeydenJarBlockScreen(pos));
+
+                /*ItemStackHandler block_inventory = blockEntity.getInventory();
 
                 ItemStack playerStack = player.getItemInHand(hand);
 
@@ -92,7 +98,7 @@ public class LeydenJar extends HorizontalDirectionalBlock implements EntityBlock
                     return InteractionResult.SUCCESS;
                 }
 
-                return InteractionResult.sidedSuccess(level.isClientSide());
+                return InteractionResult.sidedSuccess(level.isClientSide());*/
             }
         }
         return InteractionResult.SUCCESS;
